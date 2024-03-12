@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CannonBehaviour : MonoBehaviour
 {
+
+    public AudioClip cannonFireSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,10 @@ public class CannonBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("cannon");
+        // Debug.Log("cannon");
+
+       GetComponent<AudioSource>().PlayOneShot(cannonFireSound);
+    //    GetComponent<AudioSource>().Play();
+
     }
 }
