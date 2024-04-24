@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Instruction : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject instructionsPanel;  // Drag the panel to this field in the inspector
+
     void Start()
     {
-        
+        instructionsPanel.SetActive(true);  // Ensure this line is present and correct
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HideInstructions()
     {
-        
+        Debug.Log("Attempting to hide panel");  // This will confirm the function is called
+        instructionsPanel.SetActive(false);
     }
+}
+
 }
