@@ -1552,6 +1552,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0741947, y: 0.9715533, z: 1.314353}
   m_Center: {x: -0.00023645165, y: 0.4895087, z: -0.0010882021}
+--- !u!1 &1612552203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612552204}
+  m_Layer: 0
+  m_Name: OutlineSelection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1612552204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612552203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.85855836, y: 2.894243, z: 4.328915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1781597092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1927,3 +1958,4 @@ SceneRoots:
   - {fileID: 608725101}
   - {fileID: 563641421}
   - {fileID: 922199979}
+  - {fileID: 1612552204}
