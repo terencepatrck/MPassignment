@@ -6,44 +6,48 @@ using TMPro;
 
 public class DisplayInfo : MonoBehaviour
 {
-    public GameObject infoPanel; // Assign this in the inspector to your UI Panel
-    public TextMeshProUGUI infoText; // Assign your TextMeshProUGUI component
-    public Image infoImage; // Assign your Image component if you want to change the image dynamically
-    public string message; // Message to display, set this for each object in the Inspector
-    public Sprite image; // Image to display, set this for each object in the Inspector
+    
+    public GameObject infoPanel; 
+    public TextMeshProUGUI infoText; 
+    public Image infoImage; 
+    public string message; 
+    public Sprite image; 
 
+    // This method is called when another collider enters the trigger collider attached to the object this script is on.
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Make sure your player GameObject is tagged as "Player"
+        // Check if the player has triggered the interaction.
+        if (other.CompareTag("Player")) 
         {
-            ShowInfoPanel();
+            ShowInfoPanel(); // Call to display the information panel.
         }
     }
 
+    // Method to activate the info panel and display content.
     public void ShowInfoPanel()
     {
-        infoPanel.SetActive(true); // Show the info panel
+        infoPanel.SetActive(true); // Activate the panel.
 
-        // Update the text and image with dynamic content specific to this object
-        infoText.text = message; // Use the message set in the Inspector
-        if (infoImage != null && image != null) // Check if an image component and sprite are assigned
+        // Set the text and image from the specified properties in the Inspector.
+        infoText.text = message; // Display the assigned message.
+        if (infoImage != null && image != null) 
         {
-            infoImage.sprite = image; // Update the image displayed
+            infoImage.sprite = image; 
         }
 
-        // Unlock and show the cursor when displaying the UI
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        
+        Cursor.lockState = CursorLockMode.None; 
+        Cursor.visible = true; 
     }
 
+    // Method to hide the information panel and reset gameplay settings.
     public void CloseInfo()
     {
-        infoPanel.SetActive(false); // Hide the info panel
+        infoPanel.SetActive(false); // Deactivate the panel.
 
-        // Lock the cursor to the center of the screen and hide it for gameplay
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        // Add logic to resume game if it was paused when the UI was active
+        
+        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false; 
+        
     }
 }
