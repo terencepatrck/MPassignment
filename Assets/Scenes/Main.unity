@@ -1561,10 +1561,10 @@ MonoBehaviour:
   infoPanel: {fileID: 1678799910}
   infoText: {fileID: 1510384053}
   infoImage: {fileID: 611437416}
-  message: 'Climate Change Denial: Various fake news stories have promoted the idea
-    that climate change is a hoax perpetrated by scientists, environmentalists, and
-    governments. This misinformation has contributed to political inaction on environmental
-    policies and confusion among the public about scientific consensus.'
+  message: 'COVID-19 Pandemic: A plethora of misleading information about the virus,
+    including stories about purported treatments, conspiracy theories regarding the
+    virus''s origins, and inaccurate information on vaccines, spread rapidly, confusing
+    the public and making them resistant to immunizations and preventative measures.'
   image: {fileID: 21300000, guid: 7dd910fc0740d458fa97253feb12b940, type: 3}
 --- !u!1 &1056206219
 GameObject:
@@ -2606,7 +2606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -81.436, y: -16.331696}
+  m_AnchoredPosition: {x: 11, y: 0}
   m_SizeDelta: {x: -824.5139, y: -401.039}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678799912
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.38056087, a: 1}
+  m_Color: {r: 0.8867924, g: 0.50614095, b: 0.65093774, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
