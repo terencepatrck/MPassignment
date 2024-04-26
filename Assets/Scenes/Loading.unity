@@ -755,14 +755,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The purpose of this scene is to fact check bunch of fake news. All you
-    need to do is to trigger one
+  m_text: 'Hi Welcome to my scene. All you need to do is to trigger one
 
-    of the televisions and it will show you an
-    example
-
-    of fake news, and you will determine if the article or video is
-    fake. '
+    of the
+    televisions and it will show a pop up text on an event where fake news impacted
+    our society.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -789,8 +786,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.36
-  m_fontSizeBase: 40.36
+  m_fontSize: 45.95
+  m_fontSizeBase: 45.95
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
